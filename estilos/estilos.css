@@ -1,0 +1,634 @@
+
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+
+/* Estilo general de la barra de navegación: uso de flexbox, alineación y fondo */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los enlaces dentro de la página principal, sin subrayado y color personalizado */
+.link_index {
+    text-decoration: none;
+    color: #18736a;
+}
+
+/* Estilo de la marca o logo, centrado y con tipografía específica */
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Handjet", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: #18736a;
+}
+
+/* Estilo para la imagen dentro del logo: tamaño fijo y márgenes alrededor */
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Contenedor de los enlaces de navegación, usando flexbox para alinearlos en fila */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Espaciado entre cada enlace de la barra de navegación */
+.nav-links li {
+    margin: 0 15px;
+}
+
+/* Estilo básico de los enlaces en la barra de navegación: sin subrayado, color personalizado, y transición */
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s;
+    font-family: "Montserrat", serif;
+}
+
+/* Efecto hover para los enlaces de la barra de navegación: cambio de color y tamaño */
+.nav-links a:hover {
+    color: #18736a;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Estilo para la sección de introducción: centrado con flexbox */
+.introduccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilo de la imagen de fondo en la sección de introducción: ajuste para cubrir el área sin distorsionarse */
+.fotointro {
+    width: 100%; 
+    height: auto; 
+    max-height: 700px; 
+    object-fit: cover; 
+}
+
+/* Estilo para la capa de texto superpuesta a la imagen: fondo semitransparente y centrado */
+.text-overlay {
+    color: #18736a;
+    border-radius: 10px;
+    position: absolute; 
+    background-color: rgba(239, 239, 239, 0.499); 
+    padding: 20px; 
+    text-align: center; 
+    max-width: 40%; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Estilo para el título de la introducción: fuente y color destacados */
+.titulo_intro {
+    font-family: "Handjet", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: #18736a;
+    margin: 0;
+    padding-bottom: 10px; 
+}
+
+/* Estilo para el texto introductorio: fuente y color personalizados, con márgenes laterales */
+.textointro {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+/* Contenedor de los diferentes tipos de contenido: flexbox para distribuir los elementos en línea */
+.contenedor_tipos {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+    padding-top: 100px;
+}
+
+/* Estilo de los contenedores de texto dentro de los tipos: centrado y espaciado */
+.texto_contenedor {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: 10px;
+    text-align: center; /* Alineación horizontal del texto */
+    color: #333;
+}
+
+/* Estilo para el encabezado grande dentro del contenedor: fuente y color destacados */
+.texto_contenedor h3 {
+    font-family: "handjet", sans-serif;
+    font-size: 110px;  
+    margin: 0px;
+    color: #18736a;
+    font-weight: 700;
+}
+
+/* Estilo para el subtítulo dentro del contenedor: más pequeño pero con la misma estética */
+.texto_contenedor h5 {
+    font-family: "handjet", sans-serif;
+    font-size: 60px;  
+    margin: 0px;
+    color: #18736a;
+    font-weight: 700;
+    padding-left: 130px;
+}
+
+/* Estilo para los subtítulos más pequeños dentro del contenedor: con un tamaño más reducido */
+.texto_contenedor h6 {
+    font-family: "handjet", sans-serif;
+    font-size: 30px;  
+    margin: 0px;
+    color: #18736a;
+    font-weight: 700;
+    padding-left: 95px;
+}
+
+
+.receta_contenedor {
+    font-family: "montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Uniform width */
+    margin: 10px;
+    text-align: center; /* Center text below the image */
+    overflow: hidden;
+
+}
+
+
+.receta_contenedor img {
+    width: 100%; /* Span full container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.receta_contenedor h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    
+}
+.seccion_motivadora{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.subtitulo_motivador{
+    color: #18736a;
+    background-color: rgba(255, 255, 255, 0.696);
+    font-family: "handjet", sans-serif;
+    background-color: #18736a;
+    max-width: 50%;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+.subtitulo_motivador h3{
+    font-family: "handjet", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    text-align: center;
+    color: #ffffff;
+    width: 60%;
+}
+
+/* Contenedor principal */
+.bloque_de_opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre las secciones */
+    max-width: 900px;
+    margin: auto; /* Centra horizontalmente el bloque */
+    padding: 20px;
+    padding-bottom: 120px;
+    padding-top: 50px;
+}
+
+/* Estilo para cada imagen y texto debajo */
+.imagen_opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Ancho de las imágenes */
+}
+
+.imagen_opcion img {
+    width: 100%; /* Imagen ocupa todo el contenedor */
+    height: auto; /* Mantiene proporciones */
+    object-fit: cover; /* Asegura que no se deforme */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.imagen_opcion p {
+    font-family: "montserrat", sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* Texto centrado */
+.texto_opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'handjet', sans-serif;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.texto_opcion h3 {
+    margin: 10px 0;
+    font-size: 50px;
+    color: #18736a; 
+    text-transform: uppercase;
+}
+
+
+
+
+/*noticias.html*/
+
+.noticias {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Noticia grande */
+.noticia-grande {
+    display: flex;
+    height: 500px; /* Altura fija de la noticia */
+    margin: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia-grande img {
+    width: 500px; /* Ancho fijo de la imagen */
+    height: 100%; /* Altura ocupa el 100% del contenedor */
+    object-fit: cover; /* Ajuste de la imagen para cubrir sin deformarse */
+}
+
+.noticia-grande .contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Rellena el espacio restante */
+}
+
+.noticia-grande h2 {
+    padding-left: 30px;
+    font-family: "handjet", sans-serif;
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: #18736a;
+}
+
+.noticia-grande p {
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: "montserrat", sans-serif;
+    color: #666;
+}
+
+/* Noticias pequeñas */
+.noticia-pequena {
+    display: flex;
+    height: 300px; /* Altura fija de las noticias pequeñas */
+    margin: 30px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.noticia-pequena img {
+    width: 300px; /* Ancho fijo de la imagen */
+    height: 100%; /* Altura ocupa el 100% del contenedor */
+    object-fit: cover; /* Ajuste de la imagen para cubrir sin deformarse */
+}
+
+.noticia-pequena .contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1; /* Rellena el espacio restante */
+}
+
+/* Título de la noticia pequeña */
+.noticia-pequena h3 {
+    padding-left: 30px; 
+    margin: 0 0 10px; 
+    font-family: "handjet", sans-serif; 
+    font-size: 30px; 
+    color: #18736a;
+}
+
+/* Texto del contenido en las noticias pequeñas */
+.noticia-pequena p {
+    padding-left: 30px; 
+    font-size: 15px; 
+    font-family: "montserrat", sans-serif; 
+    color: #666; 
+}
+
+/* Enlace de "seguir leyendo" */
+.seguir_leyendo {
+    text-decoration: none; 
+    color: #18736a; 
+    transition: 0.3s; 
+}
+
+/* Efecto hover en el enlace de "seguir leyendo" */
+.seguir_leyendo:hover {
+    font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+/*recetas.html*/
+
+/* Contenedor principal que agrupa los elementos */
+.contenedor {
+    display: flex; 
+    gap: 90px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    padding-top: 200px; 
+    font-family: "montserrat", sans-serif; 
+}
+
+/* Elemento individual dentro del contenedor */
+.item {
+    text-align: center; 
+    max-width: 400px; 
+    width: 100%; 
+    overflow: hidden; 
+}
+
+/* Imagen dentro de un elemento */
+.item img {
+    width: 100%;
+    height: auto; 
+    border-bottom: 2px solid #ddd; 
+    transition: 0.4s; 
+}
+
+/* Efecto hover para la imagen */
+.item img:hover {
+    scale: 1.1; 
+}
+
+/* Texto debajo de la imagen */
+.item p {
+    margin-top: 10px; 
+    font-weight: bold; 
+    color: #333; 
+    text-transform: uppercase; 
+    padding: 10px; 
+}
+
+
+
+/*receta.html*/
+
+/* Contenedor principal de la sección de la receta con un diseño flexible y espaciado */
+.fotoreceta {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: transparent;
+}
+
+/* Estiliza la imagen principal de la receta con un sombreado */
+.fotoreceta1 {
+    box-shadow: #787878 0px 0px 10px 0px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Define el estilo del título principal de la receta */
+#titulo_receta {
+    font-family: "handjet", sans-serif;
+    font-size: 50px;
+    color: #18736a;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+/* Define el estilo del texto descriptivo de la receta */
+#texto_receta {
+    font-family: "montserrat", sans-serif;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    float: none;
+}
+
+/* Contenedor general de toda la receta con un ancho máximo y centrado */
+.receta-container {
+    margin: auto;
+    padding-bottom: 90px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Sección para mostrar información detallada de la receta con un sombreado */
+.receta-informacion {
+    box-shadow: 0 2px 4px rgb(156, 156, 156);
+    padding: 16px;
+    position: relative;
+}
+
+/* Estilo de los encabezados dentro de la sección de información de la receta */
+.receta-informacion h2 {
+    font-family: "montserrat", sans-serif;
+}
+
+/* Título principal de la receta en un estilo destacado */
+.receta-titulo {
+    font-family: "handjet", sans-serif;
+    font-size: 40px;
+    color: #18736a;
+    margin: auto;
+    text-align: center;
+}
+
+/* Estilo para mostrar el tiempo de preparación o cocción */
+.receta-tiempo {
+    font-size: 15px;
+    font-family: "montserrat", sans-serif;
+    color: #555;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+/* Contenedor para la lista de ingredientes con espaciado adicional */
+.receta-ingredientes {
+    font-family: "montserrat", sans-serif;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Define el espaciado inferior para la lista de ingredientes */
+#ingredientes {
+    padding-bottom: 16px;
+}
+
+/* Ajuste adicional para el contenedor de los ingredientes */
+.receta-ingredientes {
+    padding-left: 20px;
+    padding: 10;
+}
+
+/* Estilo para la descripción detallada de la receta */
+.receta-descripcion {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+
+
+/*cuestionario.html*/
+
+
+/* Contenedor principal del formulario con centrado, espaciado y ajuste de ancho */
+.formulario-container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    font-family: "montserrat", sans-serif;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+/* Título del formulario centrado con un margen inferior */
+.formulario-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo de las etiquetas de los campos del formulario */
+.formulario-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo común para los campos de entrada (input) y áreas de texto (textarea) */
+.formulario-container input,
+.formulario-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Ajuste del tamaño del área de texto, permitiendo su redimensionamiento vertical */
+.formulario-container textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilo del botón del formulario, con fondo verde y cambios en el hover */
+.formulario-container button {
+    background-color: #18736a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Efecto de cambio de color en el botón al pasar el mouse por encima */
+.formulario-container button:hover {
+    background-color: #333;
+}
+
+
+.creative_commons{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #18736a;
+    color: #ffffff;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    text-decoration: none;
+}
+
+/* Estilo para el pie de página con fondo verde y altura fija */
+footer {
+    background-color: #18736a;
+    height: 100px;
+}
